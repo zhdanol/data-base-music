@@ -1,0 +1,69 @@
+INSERT INTO Music_genre
+(genre)
+VALUES
+('Rap'),
+('Hip-Hop'),
+('Rock'),
+('Pop');
+
+INSERT INTO Musicians
+(musicians)
+VALUES
+('Metallica'),
+('Eminem'),
+('The Weeknd'),
+('Travis Scott');
+
+INSERT INTO GanreMusicians
+(genre_id, musicians_id)
+VALUES
+(1, 2),
+(2, 4),
+(3, 1),
+(4, 3);
+
+INSERT INTO Albums
+(album_name, album_year)
+VALUES
+('Hurry Up Tomorrow', 2025),
+('UTOPIA', 2023),
+('Master Of Puppets', 1986),
+('The Eminem Show', 2002);
+
+INSERT INTO Songs
+(songs_name, songs_duration, album_id)
+VALUES
+('Without Me', 290, 4)
+('São paulo', 301, 1)
+('Master Of Puppets', 515, 3)
+('FE!N', 191, 2)
+('Opening Night', 96)
+('Till I Collapse', 297)
+
+INSERT INTO AlbumsMusicians
+(musicians_id, albums_id)
+VALUES
+(1, 3)
+(2, 4)
+(3, 1)
+(4, 2)
+(5, 1)
+(6, 4)
+
+INSERT INTO Collection
+(collection_id, collection_year)
+VALUES
+('Микс хип-хопа', 2024)
+('BEST OF EMINEM', 2024)
+('This is Metallica', 2020)
+('This Is The Weeknd', 2025)
+
+INSERT INTO SongsCollection  
+(collectioon_id, songs_id)
+VALUES
+(1, 4)
+(2, 1)
+(3, 3)
+(4, 2)
+(4, 5)
+(2, 6)
